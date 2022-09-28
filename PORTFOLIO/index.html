@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/images/icons8-portfolio-64.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body onload="start_loading()">
+    <!--  1- LOADING PAGE -->
+    <div class="loading_page" onload="start_loading()">
+      <img src="images/loading_GIF.gif" alt="Loading GIF" />
+    </div>
+
+    <div class="night_mode">
+      <i class="bi bi-moon-fill" id="moon"></i>
+      <i class="bi bi-brightness-high-fill" id="sun"></i>
+    </div>
+    <!--  2- NAVBAR -->
+    <nav>
+      <!-- <img src="images/me.jpg" alt=""> -->
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <!--  3-HEADER -->
+    <header id="home">
+      <h1 id="myH1_header">welcome to my portfolio</h1>
+    </header>
+
+    <!--  4- ABOUT -->
+    <section id="about" class="about">
+      <h1 class="title_sec">about me</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="images/me.jpg" alt="my picture" />
+          <i class="bi bi-chevron-down"></i>
+          <i class="bi bi-chevron-up"></i>
+          <p>FName <span>:</span> Abcire</p>
+          <p>LName <span>:</span> Mounir</p>
+          <p>AGE <span>:</span> 18</p>
+          <p>COUNTRY <span>:</span> Algeria</p>
+        </div>
+        <div class="card">
+          <img src="images/me.jpg" alt="my picture" />
+          <i class="bi bi-chevron-down"></i>
+          <i class="bi bi-chevron-up"></i>
+          <p>CITY <span>:</span> Oran</p>
+          <p>ARABIC <span>:</span> Native</p>
+          <p>FRENCH <span>:</span> 75%</p>
+          <p>ENGLISH <span>:</span> 50%</p>
+        </div>
+      </div>
+      <div class="skils" id="skils">
+        <div class="skil">
+          <p class="html">HTML</p>
+          <div class="skilNbr_container">
+            <div class="skilNbr"></div>
+          </div>
+        </div>
+        <div class="skil">
+          <p class="css">CSS</p>
+          <div class="skilNbr_container">
+            <div class="skilNbr"></div>
+          </div>
+        </div>
+        <div class="skil">
+          <p class="js">JAVASCRIPT</p>
+          <div class="skilNbr_container">
+            <div class="skilNbr"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <h1 class="title_sec">portfolio</h1>
+      <div class="myWorks" id="myWorks">
+        <div class="work html&css">
+          <img src="images/html&css.png" alt="html&css" />
+          <a href="portfolio_html-css.html" target="_blank">view</a>
+        </div>
+        <div class="work html&css&js">
+          <img src="images/html&css&js.png" alt="html&css&js" />
+          <a href="portfolio_html-css-js.html" target="_blank">view</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3- FOOTER -->
+    <footer id="contact" class="contact">
+      <h1 class="title_sec">contact me</h1>
+      <div class="socialNetworks">
+        <a href="https://www.instagram.com/mounirmounirou6547/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B2130775383308&text&app_absent=0"
+          target="_blank"
+        >
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="mailto:abciremounir47@gmail.com" target="_blank">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="https://web.telegram.org/z/" target="_blank">
+          <i class="bi bi-telegram"></i>
+        </a>
+        <a href="https://www.facebook.com/mounir.abcire/" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+      <h3 id="social_name">hover this icons</h3>
+    </footer>
+  </body>
+  <script src="JavaScript/script.js"></script>
+</html>
